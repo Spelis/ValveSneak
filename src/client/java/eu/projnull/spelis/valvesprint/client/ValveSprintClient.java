@@ -1,4 +1,4 @@
-package eu.projnull.spelis.valvesneak.client;
+package eu.projnull.spelis.valvesprint.client;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
@@ -7,9 +7,9 @@ import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import org.lwjgl.glfw.GLFW;
 
-public class ValvesneakClient implements ClientModInitializer {
+public class ValveSprintClient implements ClientModInitializer {
     private KeyBinding walkBind = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-            "key.valvesneak.walk",
+            "key.valvesprint.walk",
             InputUtil.Type.KEYSYM,
             GLFW.GLFW_KEY_LEFT_SHIFT,
             "key.categories.movement"

@@ -1,8 +1,8 @@
-package eu.projnull.spelis.valvesneak;
+package eu.projnull.spelis.valvesprint;
 
 import net.fabricmc.api.ModInitializer;
 
-public class Valvesneak implements ModInitializer {
+public class ValveSprint implements ModInitializer {
 
     @Override
     public void onInitialize() {

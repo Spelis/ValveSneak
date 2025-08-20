@@ -1,35 +1,35 @@
 {
   "schemaVersion": 1,
-  "id": "valvesneak",
+  "id": "valvesprint",
   "version": "${version}",
-  "name": "ValveSneak",
+  "name": "ValveSprint",
   "description": "Sprinting like Valve games.",
   "authors": [],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/valvesneak/icon.png",
+  "icon": "assets/valvesprint/icon.png",
   "environment": "client",
   "entrypoints": {
     "fabric-datagen": [
-      "eu.projnull.spelis.valvesneak.client.ValvesneakDataGenerator"
+      "eu.projnull.spelis.valvesprint.client.ValveSprintDataGenerator"
     ],
     "client": [
-      "eu.projnull.spelis.valvesneak.client.ValvesneakClient"
+      "eu.projnull.spelis.valvesprint.client.ValveSprintClient"
     ],
     "main": [
-      "eu.projnull.spelis.valvesneak.Valvesneak"
+      "eu.projnull.spelis.valvesprint.ValveSprint"
     ]
   },
   "mixins": [
-    "valvesneak.mixins.json",
+    "valvesprint.mixins.json",
     {
-      "config": "valvesneak.client.mixins.json",
+      "config": "valvesprint.client.mixins.json",
       "environment": "client"
     }
   ],
   "depends": {
-    "fabricloader": "*",
+    "fabricloader": ">=0.16.0",
     "fabric": "*",
-    "minecraft": "*"
+    "minecraft": ">=1.16.0"
   }
 }

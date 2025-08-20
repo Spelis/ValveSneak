@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "valvesneak",
+  "version": "${version}",
+  "name": "ValveSneak",
+  "description": "Sprinting like Valve games.",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/valvesneak/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "eu.projnull.spelis.valvesneak.client.ValvesneakDataGenerator"
+    ],
+    "client": [
+      "eu.projnull.spelis.valvesneak.client.ValvesneakClient"
+    ],
+    "main": [
+      "eu.projnull.spelis.valvesneak.Valvesneak"
+    ]
+  },
+  "mixins": [
+    "valvesneak.mixins.json",
+    {
+      "config": "valvesneak.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": "*"
+  }
+}
